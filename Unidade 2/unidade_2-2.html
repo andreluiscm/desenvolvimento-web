@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Desenvolvimento Web</title>
+</head>
+
+<body>
+    <!-- Bloco de Títulos -->
+    <div id="titulos">
+        <h1>Unidade 2</h1>
+        <h2>HTML I: Estruturação Básica de Páginas e Inserção de Conteúdos</h2>
+        <h3>Parte 2/3 - Manipulação de Tabelas</h3>
+    </div>
+
+    <hr>
+
+    <!-- Bloco de Tabelas -->
+    <div id="tabelas">
+        <h3>Exemplo de Tabela</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Sobrenome</th>
+                    <th>Idade</th>
+                    <th>Cidade</th>
+                    <th>Região</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ana</td>
+                    <td>Barbosa</td>
+                    <td>25</td>
+                    <td>Fortaleza</td>
+                    <td>Nordeste</td>
+                </tr>
+                <tr>
+                    <td>Bruno</td>
+                    <td>Cardoso</td>
+                    <td>30</td>
+                    <td>Recife</td>
+                    <td>Nordeste</td>
+                </tr>
+                <tr>
+                    <td>Carla</td>
+                    <td>Duarte</td>
+                    <td>28</td>
+                    <td>São Paulo</td>
+                    <td>Sudeste</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Unindo Células da Tabela</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Sobrenome</th>
+                    <th>Idade</th>
+                    <th>Cidade</th>
+                    <th>Região</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">Ana Barbosa</td>
+                    <td>25</td>
+                    <td>Fortaleza</td>
+                    <td rowspan="2">Nordeste</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Bruno Cardoso</td>
+                    <td>30</td>
+                    <td>Recife</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Carla Duarte</td>
+                    <td>28</td>
+                    <td>São Paulo</td>
+                    <td>Sudeste</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Unindo Células da Tabela e Centralizando</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Sobrenome</th>
+                    <th>Idade</th>
+                    <th>Cidade</th>
+                    <th>Região</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2" align="center">Ana Barbosa</td>
+                    <td>25</td>
+                    <td>Fortaleza</td>
+                    <td rowspan="2" valign="middle">Nordeste</td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">Bruno Cardoso</td>
+                    <td>30</td>
+                    <td>Recife</td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">Carla Duarte</td>
+                    <td>28</td>
+                    <td>São Paulo</td>
+                    <td>Sudeste</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

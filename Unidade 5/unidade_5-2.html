@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Desenvolvimento Web</title>
+    <style>
+        /* Container que usa o layout: Grid */
+        .galeria {
+            /* Ativa o Grid */
+            display: grid;
+            
+            /* 3 colunas fixas de 180px */
+            grid-template-columns: repeat(3, 180px);
+
+            /* Espaço entre as imagens */
+            gap: 12px;
+            
+            /* Posiciona o grid no centro do container */
+            justify-content: center;
+            
+            /* Alinha o grid no eixo vertical do container */
+            align-content: center;
+            
+            /* Borda para visualizar o container */
+            border: 5px solid darkblue;
+            
+            /* Preenchimento interno do container */
+            padding: 12px;
+            
+            min-height: 180px;
+        }
+
+        /* Itens (imagens) dentro do grid */
+        .galeria img {
+            width: 180px;
+            height: 120px;
+            object-fit: fill;
+            
+            /* Borda para visualizar cada item */
+            border: 5px solid orange;
+        }
+
+        /* Área do texto de explicação */
+        .explicacao {
+            font-family: Arial;
+            margin: 16px 0;
+        }
+
+        /* Área do texto de dicas */
+        .dicas {
+            font-family: Arial;
+            margin: 16px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Bloco de Cabeçalho -->
+    <div id="cabecalho" style="text-align: center;">
+        <h1>Unidade 5</h1>
+        <h2>CSS II: Layouts, Responsividade e Estilização de Imagens</h2>
+        <h3>Parte 2/4 - Layouts: Grid</h3>
+    </div>
+
+    <hr>
+
+    <h2 style="text-align: center;">Layout Grid</h2>
+
+    <p class="explicacao">
+        O container abaixo usa <code>display: grid</code>. Experimente alterar no CSS:
+        <code>grid-template-columns</code> (ex.: <i>repeat(3, 180px)</i> ou
+        <i>repeat(auto-fit, minmax(180px, 1fr))</i>) e <code>justify-content</code> e <code>align-content</code>.
+    </p>
+
+    <!-- Container Grid com cinco imagens -->
+    <div class="galeria">
+        <img src="imagem-1.jpg" alt="Imagem 1">
+        <img src="imagem-2.jpg" alt="Imagem 2">
+        <img src="imagem-3.jpg" alt="Imagem 3">
+        <img src="imagem-1.jpg" alt="Imagem 1">
+        <img src="imagem-2.jpg" alt="Imagem 2">
+    </div>
+
+    <p class="dicas">
+        <b>Dicas:</b><br>
+        Para tornar responsivo, use: grid-template-columns:
+        <code>grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));</code>
+    </p>
+</body>
+
+</html>

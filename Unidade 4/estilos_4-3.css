@@ -1,0 +1,14 @@
+#cabecalho,
+#rodape {
+    background: lightblue;
+}
+
+a {
+    color: darksalmon;
+}
+
+#conteudo .bloco {
+    border: 5px solid lightgray;
+    padding: 12px;
+    margin: 12px 0;
+}

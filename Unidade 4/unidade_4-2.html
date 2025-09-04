@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Desenvolvimento Web</title>
+    <style>
+        body {
+            background-color: white;
+            margin: 0;
+            font-family: Arial;
+        }
+
+        /* .caixa é a DIV que contém a imagem */
+        .caixa {
+            /* PADDING (espaço interno entre a borda e o conteúdo): área azul clara */
+            padding: 24px;
+
+            /* BORDA (linha azul ao redor do padding) */
+            border: 8px solid darkblue;
+            
+            /* MARGEM (espaço externo): visível como o "respiro" com fundo do body */
+            margin: 24px;
+
+            background-color: lightcyan;
+        }
+
+        /* Texto explicativo dentro da DIV .caixa */
+        .caixa .descricao {
+            margin: 25px 25px 25px 25px;
+        }
+
+        /* A imagem também tem seu próprio box model */
+        .caixa .foto {
+            display: block;
+
+            /* CONTEÚDO: width/height definem a área da imagem */
+            width: 300px;
+            height: 200px;
+
+            /* PADDING da imagem (amarelo claro) */
+            padding: 24px;
+
+            /* BORDA da imagem (laranja) */
+            border: 8px solid darkorange;
+
+            /* MARGEM da imagem: afasta a imagem dos textos na .caixa */
+            /* auto centraliza horizontalmente o bloco com width fixo */
+            margin: 10px auto;
+
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Bloco de Cabeçalho -->
+    <!-- CSS INLINE na div -->
+    <div id="cabecalho" style="text-align: center;">
+        <h1>Unidade 4</h1>
+        <h2>CSS I: Conceitos, Seletores e Propriedades Básicas de Estilo</h2>
+        <h3>Parte 2/2 - Box Model: <i>content</i>, <i>padding</i>, <i>border</i> e <i>margin</i>
+        </h3>
+    </div>
+
+    <hr>
+
+    <!-- DIV principal que demonstra o box model (content, padding, border e margin) -->
+    <h2 style="text-align: center;">Box Model</h2>
+
+    <div class="caixa">
+        <p class="descricao">
+            Esta <b>div</b> possui <i>padding</i>, <i>border</i> e <i>margin</i>.
+            Dentro dela há uma <strong>imagem</strong> que também tem seu próprio box model
+            (conteúdo, <i>padding</i>, <i>border</i> e <i>margin</i>).
+        </p>
+
+        <img class="foto" src="box-model.jpg" alt="Exemplo de imagem">
+    </div>
+</body>
+
+</html>

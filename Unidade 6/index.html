@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Desenvolvimento Web</title>
+
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="src/css/estilos.css">
+
+    <!-- CSS Interno -->
+    <style>
+        /* Fonte e cores básicas */
+        body {
+            font-family: Arial;
+            color: darkblue;
+        }
+
+        /* Seletores por ID e classe */
+        #cabecalho {
+            padding: 12px;
+            background-color: darkgray;
+        }
+
+        #cabecalho h1 {
+            color: darkred;
+        }
+
+        /* Seletores combinados (descendentes) */
+        #conteudo .bloco h2 {
+            font-size: 1.5rem;
+        }
+
+        .bloco p b {
+            color: darkgreen;
+        }
+
+        .bloco p i {
+            color: green;
+        }
+
+        /* Lista simples */
+        .lista-basica li {
+            list-style:
+                square;
+        }
+
+        /* Form menor */
+        #mini-form label {
+            display: block;
+            margin-top: 8px;
+        }
+
+        #mini-form input,
+        select,
+        button {
+            margin-top: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Bloco de Cabeçalho -->
+    <!-- CSS INLINE na div -->
+    <div id="cabecalho" style="text-align: center;">
+        <h1>Unidade 6</h1>
+        <h2>Ferramentas de Edição, Versionamento e Implantação de Sites na Web</h2>
+        <h3>Parte 1/1 - GitHub Pages
+        </h3>
+    </div>
+
+    <hr>
+
+    <!-- Bloco de Conteúdo -->
+    <div id="conteudo">
+        <!-- Texto + Lista -->
+        <div class="bloco" id="texto-lista">
+            <h2>Texto e Lista</h2>
+            <p>Este é um parágrafo com <b>negrito</b>, <i>itálico</i> e um <a href="https://www.w3schools.com/html/"
+                    target="_blank">link</a> (W3Schools).</p>
+            <ul class="lista-basica">
+                <li>Item A</li>
+                <li>Item B</li>
+            </ul>
+        </div>
+
+        <!-- Imagem -->
+        <div class="bloco" id="imagem">
+            <h2>Imagem</h2>
+            <!-- CSS INLINE na borda da imagem -->
+            <img src="src/imagens/imagem.jpg" alt="Exemplo de imagem" width="320" height="180" style="border:10px solid orange;">
+        </div>
+
+        <!-- Vídeo -->
+        <div class="bloco" id="video">
+            <h2>Vídeo</h2>
+            <video controls loop width="360" height="360" poster="src/imagens/video-poster.jpg">
+                <source src="src/videos/video.mp4" type="video/mp4">
+                O navegador não suporta o elemento <code>&lt;video&gt;</code>.
+            </video>
+        </div>
+
+        <!-- Formulário -->
+        <div class="bloco" id="formulario">
+            <h2>Formulário</h2>
+            <form id="mini-form" action="#" method="post">
+                <label for="nome">Nome completo:</label>
+                <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
+
+                <label for="email">E-mail:</label>
+                <input id="email" name="email" type="email" placeholder="voce@exemplo.com" required>
+
+                <label for="curso">Curso:</label>
+                <select id="curso" name="curso">
+                    <option value="">Selecione...</option>
+                    <option>Front-end</option>
+                    <option>Back-end</option>
+                </select>
+
+                <label>
+                    <input type="checkbox" name="novidades" value="sim"> Receber novidades
+                </label>
+
+                <!-- CSS INLINE no botão -->
+                <button type="submit"
+                    style="background-color: darkmagenta; color:white; border:none; padding:8px 12px; cursor:pointer;">
+                    Enviar
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <div id="rodape">
+        <p>&copy; 2025 - Desenvolvimento Web</p>
+    </div>
+</body>
+
+</html>
